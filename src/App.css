@@ -1,0 +1,9 @@
+
+.app {
+  min-height: 100vh;
+  padding: 0px;
+  background: linear-gradient(135deg, #fce7f3, #fdf2f8);
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+

@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&family=Fredoka+One&display=swap');
+
+body {
+  background: linear-gradient(135deg, #e8f5e9 0%, #c8e6c9 100%);
+  font-family: 'Nunito', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+}
+
+.registration-container {
+  background-color: white;
+  border-radius: 24px;
+  padding: 30px;
+  max-width: 420px;
+  width: 100%;
+  box-shadow: 0 8px 25px rgba(76, 175, 80, 0.15);
+  border: 3px solid #e8f5e9;
+}
+
+.form-title {
+  text-align: center;
+  font-family: 'Fredoka One', cursive;
+  font-size: 28px;
+  color: #2e7d32;
+  margin-bottom: 25px;
+  padding: 0 10px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  padding: 0 5px;
+}
+
+.form-label {
+  display: block;
+  font-weight: 600;
+  color: #388e3c;
+  margin-bottom: 8px;
+  font-size: 15px;
+  padding-left: 2px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 14px 18px;
+  font-size: 16px;
+  border-radius: 16px;
+  border: 2px solid #c8e6c9;
+  background-color: #f9fdf9;
+  color: #1b5e20;
+  font-family: 'Nunito', sans-serif;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #4caf50;
+  box-shadow: 0 0 0 3px rgba(76, 175, 80, 0.15);
+}
+
+.form-input::placeholder {
+  color: #81c784;
+  opacity: 0.8;
+}
+
+.button-group {
+  display: flex;
+  gap: 12px;
+  margin-top: 25px;
+  padding: 0 5px;
+}
+
+.submit-button {
+  flex: 1;
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 16px;
+  background: #4caf50;
+  color: white;
+  cursor: pointer;
+  font-family: 'Nunito', sans-serif;
+  transition: all 0.2s ease;
+  min-height: 50px;
+}
+
+.submit-button:hover {
+  background: #388e3c;
+  transform: translateY(-2px);
+}
+
+.clear-button {
+  padding: 16px 24px;
+  font-size: 15px;
+  font-weight: 600;
+  border: 2px solid #a5d6a7;
+  border-radius: 16px;
+  background: white;
+  color: #2e7d32;
+  cursor: pointer;
+  font-family: 'Nunito', sans-serif;
+  transition: all 0.2s ease;
+  min-height: 50px;
+  box-sizing: border-box;
+}
+
+.clear-button:hover {
+  background: #e8f5e9;
+}
+
+.output-section {
+  margin-top: 25px;
+  padding: 20px;
+  border-radius: 16px;
+  background-color: #f1f8e9;
+  border: 2px solid #a5d6a7;
+  box-sizing: border-box;
+}
+
+.output-title {
+  font-family: 'Fredoka One', cursive;
+  color: #388e3c;
+  font-size: 18px;
+  margin-bottom: 15px;
+  text-align: center;
+  padding: 0 5px;
+}
+
+.output-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 8px 12px;
+  background-color: white;
+  border-radius: 12px;
+  border: 1px solid #e8f5e9;
+  min-height: 40px;
+  box-sizing: border-box;
+}
+
+.output-label {
+  font-weight: 600;
+  color: #4caf50;
+  font-size: 14px;
+  flex-shrink: 0;
+  padding-right: 10px;
+}
+
+.output-value {
+  color: #1b5e20;
+  font-weight: 500;
+  text-align: right;
+  flex-grow: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-width: 0;
+}
+
+.decoration {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 15px;
+  }
+  
+  .registration-container {
+    padding: 25px 20px;
+    margin: 0;
+  }
+  
+  .button-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .clear-button {
+    padding: 16px;
+    width: 100%;
+  }
+  
+  .submit-button {
+    width: 100%;
+  }
+  
+  .form-group,
+  .button-group {
+    padding: 0;
+  }
+  
+  .output-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+  
+  .output-label,
+  .output-value {
+    width: 100%;
+    text-align: left;
+  }
+  
+  .output-value {
+    white-space: normal;
+    word-break: break-word;
+  }
+}
